@@ -1,0 +1,197 @@
+section.latest_post{
+    .wrap_with_image{
+
+        h3{
+            margin-bottom:10px;
+        }
+       
+        @include md-up{
+            padding-right:25px;
+            float: left;
+            width: calc(100% - 250px);
+        }
+
+        p.category{
+            color:$blue;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            padding-left: 45px;
+            position: relative;
+
+            &::before{
+                content: "";
+                width: 35px;
+                height: 3px;
+                display: block;
+                transition: all .3s ease;
+                background-color: $blue;
+                position: absolute;
+                left: 0;
+                top: 12px;
+            }
+        }
+        
+    }
+    .right_thumb_image{
+        width: 250px;
+        margin: 0 auto 30px;
+
+        @include md-up{
+            float:right;
+            
+        }
+        
+    }
+}
+
+
+
+section.featured_posts{
+    padding: 40px 0;
+    .wrap{
+        padding:50px 20px;
+        -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        margin-bottom: 30px;
+
+        @include xxl-up{
+            padding:50px 30px;   
+        }
+
+        h3{
+            margin-bottom: 20px;
+            color: $blue;
+
+            @include xxl-up{
+                font-size: 26px;
+            }
+        }
+        span.category-date{
+            color:$red;
+            font-size:16px;
+            margin-bottom: 15px;
+            display: block;
+        }
+        p.details{
+            margin-bottom:0;
+        }
+
+        a.read_more_link{
+            color:$blue;
+            display: block;
+            padding-top: 30px;
+
+            @include xxl-up{
+                font-size: 18px;
+            }
+
+            &::before{
+                content:"";
+                background-color:$blue;
+                width: 120px;
+                height: 2px;
+                display: block;
+                margin-left: -20px;
+                margin-bottom: 20px;
+                transition:all 0.3s ease;
+
+                @include xxl-up{
+                    width: 140px;
+                    margin-left: -30px;
+                }
+                
+
+            }
+
+            img{
+                display: inline-block;
+                margin-left: 5px;
+                transition:all 0.3s ease;
+            }
+
+            
+            &:hover{
+                &::before{
+                    width: 135px;
+                    background-color:$orange;
+                    transition:all 0.3s ease;
+
+                    @include xxl-up{
+                        width: 155px;
+                    }
+                }
+
+                img{
+                    margin-left:10px;
+                    transition:all 0.3s ease;
+                }
+            }
+            
+        }
+
+        img.right_thumb_image {
+            width: 100px;
+            float: right;
+            bottom: 50px;
+            position: absolute;
+            right: 32px;
+        }
+    }
+}
+
+section.posts{
+    .wrap{
+        border-bottom: 1px solid gray;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+        
+
+        @include xl-up{
+            margin-bottom: 40px;
+            padding-bottom:40px;
+        }
+    }
+    h3{
+        margin-bottom: 15px;
+        padding-top: 15px;
+        color: $blue;
+        text-transform: unset;
+
+        @include xxl-up{
+            font-size: 26px;
+        }
+    }
+
+    span.category-date{
+        color:$gray;
+        font-size:18px;
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    .wrap_with_image{
+       
+        @include xl-up{
+            padding-right:25px;
+            float: left;
+            width: calc(100% - 150px);
+        }
+        
+    }
+
+    .right_thumb_image{
+        width: 120px;
+        margin: 0 auto;
+
+        @include md-up{
+            float:right;
+            
+        }
+        
+    }
+
+   
+
+}

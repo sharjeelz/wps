@@ -1,0 +1,692 @@
+
+// Home
+// Home Section Hero CSS starts here
+main.home{
+ 
+    section.hero{
+        padding-top:0;
+
+        @include xl-up{
+            padding-top: 5rem;
+        }
+       
+
+        .text_wrapper{
+            @include lg-up{
+                max-width:420px;
+            }
+
+            @include xl-up{
+                padding-top:90px;
+            }
+
+            h2{
+                font-size:30px;
+                color:$blue;
+                line-height: 1.3;
+                margin-bottom: 15px;
+
+                @include md-up{
+                    font-size:34px;
+                }
+
+                @include xxl-up{
+                    font-size:40px;
+                    line-height: 1.2;
+                }
+                
+            }
+           
+            
+           
+
+            .learn_more_link{
+                color:$white;
+                display:inline-block;
+                font-weight: 600;
+                background-color: $orange;
+                padding: 10px 25px;
+
+                @include xxl-up{
+                    font-size: 16px;
+                }
+
+                &:hover{
+                    background-color: $red;
+                    color:$white;
+                }
+
+            }
+
+        }
+
+        .img_wrap{
+            position: absolute;
+            right: 50px;
+            top: 0;
+            display:none;
+
+            @include lg-up{
+                display:block;
+                width: 750px;
+            }
+
+            @include xl-up{
+                width:895px;
+                right: 100px;
+            }
+            @include xxl-up{
+                top: -30px;
+                width: auto;
+                right:50px;
+            }
+        }
+    
+    }// Home Section Hero CSS Ends here
+    
+
+    // Home Section Client Logo Starts here
+    section.client_logos{
+        background-color:$blue;
+        margin: 50px 0;
+
+        @include xl-up{
+            margin: 150px 0 50px;
+        }
+
+        .wrapper{
+            img.logo{
+                margin:0 auto 20px;
+            }
+
+            
+            @include md-up{
+                .custom_width{
+                    max-width: 20%;
+                }
+            }
+            
+        }
+    }
+    // Home Section Client Logo Ends here
+
+
+    // Home Section Portfolio Starts Here
+
+    section.portfolio{
+        .slider{
+            margin-bottom: 40px;
+            .slick-track{
+                display: flex !important;
+            }
+            .slick-slide{
+                padding:10px;
+                height: inherit;
+
+                &:focus{
+                    outline: none;
+                }
+                .wrap{
+                    padding:50px 45px;
+                    -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+                    -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+                    box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+                    height: 100%;
+                    h3{
+                        font-size:20px;
+                        margin-bottom: 20px;
+                        color: $blue;
+
+                        @include xxl-up{
+                            font-size:22px;
+                        }
+                    }
+                    p.details{
+                   
+                        margin-bottom:0;
+
+                       
+                    }
+                }
+
+                &.slick-center{
+                    .wrap{
+                        background-color: $green;
+
+                        h3{
+                            color:$white;
+                        }
+                        p.details{
+                            color:$white;
+                        }
+                    }
+                }
+            }
+
+            .slick-arrow{
+                position: absolute;
+                bottom: -80px;
+                background: transparent;
+                color: $blue;
+                display: none !important;
+                
+
+                @include md-up{
+                    display: block !important;
+                }
+                @include xxl-up{
+                    font-size: 16px;
+                }
+            }
+
+            .slick-prev{
+                    right:95px;
+
+                    @include sm-up{
+                        right:130px
+                    }
+
+                    
+                &::before{
+                    content:"";
+                    display: inline-block;
+                    background:url('../images/previous_arrow.png') no-repeat center center;
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 15px;
+                }
+
+               
+                &:hover, &:active, &:visited, &:focus{
+                    text-decoration: none;
+                    outline: none;
+                }
+            }
+            .slick-next{
+                right:15px;
+
+                @include sm-up{
+                    right:50px;  
+                }
+
+               
+
+                &::after{
+                    content:"";
+                    display: inline-block;
+                    background:url('../images/next_arrow.png') no-repeat center center;
+                    width: 10px;
+                    height: 10px;
+                    margin-left: 15px;
+                }
+                &:hover, &:active, &:visited, &:focus{
+                    text-decoration: none;
+                    outline: none;
+                }
+            }
+        }
+
+      
+    }// Home Section Portfolio Ends Here
+
+// Section Tech Partners Starts Here
+section.tech_partner{
+    .text_wrapper{
+
+        @include lg-up{
+            max-width:450px;
+        }
+      
+
+        @include lg-up{
+            padding-top:80px;
+        }
+      
+        p.head{
+            margin-bottom:30px;
+        }
+
+   
+        p.details{
+            line-height: 1.5;
+            margin-bottom: 30px;
+
+          
+        }
+
+    }
+
+    
+    .img_wrap{
+        position: relative;
+        max-width: 600px;
+        margin: 0 auto;
+        img{
+            margin:0 auto;
+        }
+    }
+}//Section Tech Partners Ends Here
+
+
+// Home Section Blog Starts Here
+
+section.blog{
+    .wrap{
+        padding:50px 20px;
+        -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        margin-bottom: 30px;
+
+        @include xxl-up{
+            padding:50px 30px;   
+        }
+
+        h3{
+            margin-bottom: 20px;
+            color: $blue;
+
+            @include xxl-up{
+                font-size: 26px;
+            }
+        }
+        p.details{
+            margin-bottom:0;
+        }
+
+        a.read_more_link{
+            color:$blue;
+            display: block;
+            padding-top: 30px;
+
+            @include xxl-up{
+                font-size: 18px;
+            }
+
+            &::before{
+                content:"";
+                background-color:$blue;
+                width: 120px;
+                height: 2px;
+                display: block;
+                margin-left: -20px;
+                margin-bottom: 20px;
+                transition:all 0.3s ease;
+
+                @include xxl-up{
+                    width: 140px;
+                    margin-left: -30px;
+                }
+                
+
+            }
+
+            img{
+                display: inline-block;
+                margin-left: 5px;
+                transition:all 0.3s ease;
+            }
+
+            
+            &:hover{
+                &::before{
+                    width: 135px;
+                    background-color:$orange;
+                    transition:all 0.3s ease;
+
+                    @include xxl-up{
+                        width: 155px;
+                    }
+                }
+
+                img{
+                    margin-left:10px;
+                    transition:all 0.3s ease;
+                }
+            }
+            
+        }
+    }
+}
+
+// Home Section Blog Ends Here
+
+// Home Section Testimonials Starts Here
+
+section.testimonials{
+    position: relative;
+ 
+
+    @include lg-up{
+        margin-bottom:50px;
+    }
+  
+
+    .half_blue_bg{
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top:0;
+        left:0;
+        background-color: $blue;
+        z-index: 0;
+
+        @include lg-up{
+            width: 50%;
+            height:100%;
+        }
+
+    }
+    .wrapper{
+        position: relative;
+        z-index: 99;
+
+        .wrap{
+            padding:15px;
+            -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            background-color: $white;
+            position: relative;
+
+            @include lg-up{
+                padding:50px;
+            }
+    
+    .slider{
+        display: inline-block;
+        width: 100%;
+
+        @include lg-up{
+            width: calc(100% - 75px);
+        }
+       
+        .slick-slide{
+            padding:10px;
+
+            &:focus{
+                outline: none;
+            }
+          
+
+                .img_wrap{
+                    position: relative;
+                    width: 100%;
+                    display: inline-block;
+                    vertical-align: top;
+                    height:300px;
+
+                    @include lg-up{
+                        width: 400px;  
+                    }
+
+                    .placeholder{
+
+                        @include sm-up{
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-200px, -150px);
+                        }
+                      
+
+                        @include xl-up{
+                            position: relative;
+                            top:auto;
+                            left:auto;
+                            transform: translate(0,0);
+
+                            }
+                    }
+
+                    .avatar{
+                        position: absolute;
+                        width: 200px;
+                        height: 200px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-100px, -100px);
+                        object-position: top; 
+                        
+                        @include sm-up{
+                            width: 225px;
+                            height: 225px;
+                        }
+                    }
+                }
+
+                .text_wrapper {
+                    display: inline-block;
+                    width: 100%;
+                    vertical-align: top;
+                    
+
+                    @include lg-up{
+                        width: calc(100% - 415px);
+                        margin-top: 40px;
+                    }
+                }
+                h2{
+                    color:$blue;
+                    font-size:24px;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+
+                    @include xxl-up{
+                        font-size:26px;
+                    }
+                }
+                h3{
+                    font-size:14px;
+                    margin-bottom: 20px;
+
+                    @include xxl-up{
+                        font-size:16px;
+                    }
+                }
+                p.details{
+                    margin-bottom:0;
+                }
+            
+
+            &.slick-center{
+                .wrap{
+                    background-color: $green;
+
+                    h3{
+                        color:$white;
+                    }
+                    p.details{
+                        color:$white;
+                    }
+                }
+            }
+        }
+
+        .slick-arrow{
+            position: absolute;
+            background: transparent;
+            color: $blue;
+            display: none !important;
+            bottom:-50px;
+
+            @include md-up{
+                display: block !important;
+            }
+
+            @include lg-up{
+                bottom: -130px;
+            }
+
+            @include xxl-up{
+                font-size:16px;
+            }
+        }
+
+        .slick-prev{
+                right:95px;
+
+                @include lg-up{
+                    right:-50px;
+                }
+
+                
+            &::before{
+                content:"";
+                display: inline-block;
+                background:url('../images/previous_arrow.png') no-repeat center center;
+                width: 10px;
+                height: 10px;
+                margin-right: 15px;
+            }
+
+           
+            &:hover, &:active, &:visited, &:focus{
+                text-decoration: none;
+                outline: none;
+            }
+        }
+        .slick-next{
+                right:15px;
+        
+            @include lg-up{
+                right:-130px;  
+            }
+
+           
+
+            &::after{
+                content:"";
+                display: inline-block;
+                background:url('../images/next_arrow.png') no-repeat center center;
+                width: 10px;
+                height: 10px;
+                margin-left: 15px;
+            }
+            &:hover, &:active, &:visited, &:focus{
+                text-decoration: none;
+                outline: none;
+            }
+        }
+    }
+
+    .slider_vertical{
+        width: 200px;
+        position: relative;
+        margin: 0 auto;
+
+        @include md-up{
+            margin:unset;
+        }
+      
+
+        @include lg-up{
+            width: 70px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-35px, -115px);
+            
+        }
+        
+
+        .slick-slide{
+           
+            
+            @include lg-up{
+                margin:8px 0; 
+            }
+
+            img.avatar{
+                transform:scale(0.6);
+
+                @include lg-up{
+                    transform:scale(1);
+                }
+            }
+        }
+        
+        img.avatar{
+            width:50px;
+            height:50px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 50%; 
+            
+
+            @include lg-up{
+                width:30px;
+                height:30px;
+                margin:0 auto; 
+            }
+            
+            
+
+        }
+     
+        .slick-slide.slick-current.slick-active{
+             img.avatar{
+                transform:scale(1);
+                @include lg-up{
+                    transform:scale(1.5);
+                }
+             
+            } 
+        }
+        
+    }
+}
+}
+}
+
+// Home Section Testimonials Ends Here
+
+// Home Section Engage Starts Here
+
+section.engage{
+    padding-bottom: 0;
+    .wrap{
+        padding:50px 20px 0;
+        -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+        margin-bottom: 30px;
+        text-align: center;
+        min-height: 220px;
+        h3{
+            font-size:20px;
+            margin-bottom: 20px;
+            color:$blue;
+
+            @include xxl-up{
+                font-size:22px;
+            }
+
+            &::after{
+                content:"";
+                background-color:$orange;
+                width: 50px;
+                height: 2px;
+                display: table;
+                margin-bottom: 20px;
+                margin: 15px auto;
+          
+            }
+        }
+    }
+
+    .icon{
+        margin:-120px auto 40px;
+
+        @include md-up{
+            margin:-120px auto 80px;
+        }
+    }
+}
+
+// Home Section Engage Ends Here
+}
+
+// Home

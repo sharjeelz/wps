@@ -1,0 +1,5 @@
+vendor
+wp
+.env
+wp-content/themes/*
+!wp-content/themes/virtualforce

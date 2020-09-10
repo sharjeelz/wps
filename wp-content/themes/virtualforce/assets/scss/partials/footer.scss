@@ -1,0 +1,206 @@
+// Footer CSS Starts Here
+
+footer.footer{
+    height: auto;
+    width:100%;
+    padding: 0 30px 50px;
+    position: relative;
+
+    @include sm-up{
+        margin: 0 auto;
+        padding: 0 50px 50px;
+       
+    }
+
+    @include xl-up{
+        padding: 100px 100px 50px;
+        max-width: 1400px;
+
+       
+    }
+
+    @include xxl-up{
+        padding: 100px 50px 50px;
+    }
+
+    
+
+    .custom-pl{
+        @include lg-up{
+            padding-left:40px;
+        }
+    }
+
+
+    .bio_text{
+        color:$blue;
+        font-size:14px;
+        font-weight: 500;
+        margin-top:25px;
+
+        @include sm-up{
+            max-width: 180px;
+        }
+
+        @include xl-up{
+            font-size:16px;
+        }
+
+        @include xxl-up{
+            font-size:18px;
+        }
+
+        &::after{
+            content:"";
+                width:60px;
+                height:2px;
+                background-color:$blue;
+                transition:all .3s ease;
+                display:block;
+                margin-top: 20px;
+        }
+    }
+
+        ul.footer_menu{
+            margin:20px 0;
+            > li{
+                margin:0;
+                list-style: none;
+               > a{
+                    color:$blue;
+                    font-size:16px;
+                    font-weight: 600;
+                    padding: 5px 0;
+                    display: block;
+
+                    @include xxl-up{
+                        font-size: 18px;
+                    }
+                }
+
+                ul{
+                    margin:0;
+                    list-style: none;
+                    li{
+                        margin:0;
+                        a{
+                            color: $blue;
+                            font-size:14px;
+                            padding: 5px 0;
+                            display: block;
+                            transition:all 0.3s ease;
+                            margin-left:0;
+
+                            @include xxl-up{
+                                font-size:16px;
+                            }
+           
+
+                            &:hover{
+                                color:$orange;
+                                transition:all 0.3s ease;
+                                margin-left:5px;
+                            }
+                        }
+
+                       
+                    }
+                }
+            }
+
+
+        }
+
+
+
+        ul.social_wrapper {
+            margin: 20px 0;
+
+            li {
+                display: inline-block;
+                margin: 0 10px 0 0;
+
+                @include xl-up{
+                    margin: 0 20px 0 0;  
+                }
+
+                a {
+                    border: 1px solid $blue;
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    text-align: center;
+                    padding: 8px 0;
+                    transition:all 0.3s ease;
+
+                    &:hover{
+                        border:1px solid $orange;
+                        transition:all 0.3s ease;
+                    }
+
+                    img {
+                        margin: 0 auto;
+                    }
+                }
+
+                &:last-child{
+                    margin:0;
+                }
+            }
+
+           
+        }
+
+        .a_link_left{
+            width: 120px;
+            text-align: center;
+            padding:10px;
+            @include xl-up{
+                width: 140px;
+                
+            }
+            
+        }
+
+
+        .terms_policy_links{
+            margin:0;
+            li{
+                margin:0 0 20px 0;
+
+                a{
+                    transition:all 0.3s ease;
+                    margin-left:0;
+                    display:block;
+                    font-size:12px;
+                    color:$blue;
+                    font-weight: 600;
+
+                    @include xxl-up{
+                        font-size:14px;
+                    }
+
+                    &:hover{
+                        color:$orange;
+                        margin-left:5px;
+                        transition:all 0.3s ease;
+                    }
+                }
+            }
+
+           
+        }
+
+        .footer-copyright{
+            font-size:10px;
+            color:$blue;
+            font-weight: 500;
+
+            @include xxl-up{
+                font-size:12px;
+            }
+        }
+}
+
+// Footer CSS Ends Here

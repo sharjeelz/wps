@@ -1,0 +1,64 @@
+// Page not found CSS Starts Here
+
+.page_not_found{
+    background:url('../images/page_not_found_bg.png') no-repeat;
+    background-size: contain;
+    padding: 30px 0 100px;
+    background-position: center;
+    
+
+    @include xl-up {
+        padding: 100px 0;
+    }
+
+    .thumb{
+       
+        margin:40px auto 0;
+
+        @include xl-up{
+            margin: 40px 0 0 0;
+        }
+
+    }
+
+    .wrap{
+        text-align: center;
+       
+        @include xl-up{
+            padding-left:50px;
+            text-align: left;
+        }
+        
+        .text_img{
+            margin:40px auto;
+
+            @include xl-up{
+                margin: 40px 0;
+            }
+     }
+    h6{
+        font-size:34px;
+        color:$blue;
+        font-style: italic;
+        font-weight: 600;
+        text-transform: capitalize;
+
+    }
+    p.details{
+        font-size:20px;
+        color:$blue;
+        font-style: italic;
+        font-weight: 500;
+    }
+
+    span{
+        font-size:24px;
+        color:$orange;
+        text-transform: uppercase;
+    }
+    }
+
+    
+}
+
+// Page not found CSS Ends Here

@@ -1,0 +1,119 @@
+
+// Newsletter Section CSS starts Here
+section.newsletter{
+    background-color:$blue;
+    display: none;
+    padding:50px 0;
+
+    .newsletter_wrapper{
+        padding:0 30px;
+        
+        @include sm-up{
+            margin: 0 auto;
+        }
+    
+        @include xl-up{
+            padding: 0 100px;
+            max-width: 1400px;
+           
+        }
+        @include xxl-up{
+            padding: 0 50px;
+        }
+
+        p.head {
+            color: $white;
+        }
+
+        .form-row{
+           
+
+            @include md-up{
+                justify-content: flex-end;
+            }
+
+
+            .form-group {
+               width: 100%;
+               margin:20px 0;
+
+                @include md-up{
+                    width: calc(40% - 45px);
+                    margin: 0 20px;
+                }
+
+                @include xl-up{
+                    width: calc(50% - 180px);
+                    margin: 0 50px;
+                }
+                
+                    .form-control {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #8080B6;
+                        padding: 0 0 20px 0;
+                        height: 40px;
+                        color: $white;
+                        font-size: 16px;
+
+                        &:focus{
+                            box-shadow: none !important;
+                        }
+                    }
+
+
+                    input::-webkit-input-placeholder { /* Edge */
+                        color: #8080B6 !important;
+                      }
+                      
+                      input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #8080B6 !important;
+                      }
+                      
+                      input::placeholder {
+                        color: #8080B6 !important;
+                      }
+            }
+                .controls{
+                    padding: 15px 0 0 0;
+                    width: 140px;
+                    position: relative;
+                    cursor: pointer;
+                    height: 60px;
+
+                    .btn_sign_up{
+                        background: transparent;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        padding:0;
+                        text-decoration: none;
+                        background-color:$orange;
+                        padding:10px 25px;
+                        color:$white;   
+
+                        &:focus{
+                            outline: none !important;
+                        }
+
+                        @include xxl-up{
+                            font-size:16px;
+                        }
+
+                        &:hover{
+                            background-color:$red;
+                            color:$white;
+                        }
+                        
+                    }
+
+                }
+            
+        }
+
+        .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+            color:#fff
+        }
+        
+    }
+    
+}// Newsletter Section CSS Ends Here

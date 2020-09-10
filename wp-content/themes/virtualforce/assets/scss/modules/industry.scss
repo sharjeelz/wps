@@ -1,0 +1,183 @@
+main.industry{
+
+    section.overview{
+        .wrap_with_image{
+           
+            @include md-up{
+                padding-right:25px;
+                float: left;
+                width: calc(100% - 250px);
+            }
+            
+        }
+        .right_thumb_image{
+            width: 250px;
+            margin: 0 auto 30px;
+
+            @include md-up{
+                float:right;
+                
+            }
+            
+        }
+    }
+    section.expertise{
+        background-color:$blue;
+        padding:50px 50px 30px;
+        margin-bottom: 60px;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        overflow: hidden;
+
+        @include md-up{
+            padding:100px 75px 80px;
+            margin:unset;
+            left:unset;
+            right:unset;
+            width:unset;
+        }
+
+        a{
+
+     display: block;
+     margin-bottom:20px;
+
+
+        p{
+            color:$white;
+            text-transform: none;
+
+            &.head{
+                font-size:20px;
+                margin-bottom:5px;
+                padding-left: 30px;
+    
+                @include md-up{
+                    font-size:24px;
+                    padding-left: 45px;
+                }
+    
+                @include xxl-up{
+                    font-size:26px;
+                }
+
+                &::before{
+                    top:16px;
+                    width: 20px;
+
+                    @include md-up{
+                        width:35px;
+                    }
+
+                    @include xxl-up{
+                        top:18px;
+                    }
+                }
+            }
+
+        }
+    }
+    }
+
+    section.expertise_logos{
+
+        .logos_wrapper{
+            margin-top:60px;    
+            img.logo {
+                margin: 10px auto;
+            }
+            
+            span {
+                display: table;
+                margin: 0 auto 30px;
+                font-size: 12px;
+                color:$blue;
+            }
+        }
+       
+    }
+
+    section.portfolio{
+        .wrap{
+            padding:50px 20px;
+            -webkit-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            -moz-box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            box-shadow: 0px 0px 23px -13px rgb(122 122 122 / 60%);
+            margin-bottom: 30px;
+            height: calc(100% - 30px);
+    
+            @include xxl-up{
+                padding:50px 30px;   
+            }
+    
+            h3{
+                margin-bottom: 20px;
+                color: $blue;
+    
+                @include xxl-up{
+                    font-size: 26px;
+                }
+            }
+            p.details{
+                margin-bottom:0;
+            }
+    
+            a.read_more_link{
+                color:$blue;
+                display: block;
+                padding-top: 30px;
+    
+                @include xxl-up{
+                    font-size: 18px;
+                }
+    
+                &::before{
+                    content:"";
+                    background-color:$blue;
+                    width: 120px;
+                    height: 2px;
+                    display: block;
+                    margin-left: -20px;
+                    margin-bottom: 20px;
+                    transition:all 0.3s ease;
+    
+                    @include xxl-up{
+                        width: 140px;
+                        margin-left: -30px;
+                    }
+                    
+    
+                }
+    
+                img{
+                    display: inline-block;
+                    margin-left: 5px;
+                    transition:all 0.3s ease;
+                }
+    
+                
+                &:hover{
+                    &::before{
+                        width: 135px;
+                        background-color:$orange;
+                        transition:all 0.3s ease;
+    
+                        @include xxl-up{
+                            width: 155px;
+                        }
+                    }
+    
+                    img{
+                        margin-left:10px;
+                        transition:all 0.3s ease;
+                    }
+                }
+                
+            }
+        }
+    }
+}

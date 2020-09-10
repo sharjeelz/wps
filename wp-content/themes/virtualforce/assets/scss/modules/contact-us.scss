@@ -1,0 +1,177 @@
+
+// Contact Us page CSS starts here
+
+main.contact_us{
+
+    section.contact_form{
+        position: relative;
+        margin: 30px 0;
+ 
+    .half_blue_bg{
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top:0;
+        right:0;
+        background-color: $blue;
+        z-index: -1;
+
+        @include lg-up{
+            width: 50%;
+            height:100%;
+        }
+
+    }
+    .wrapper{
+
+        img.logo{
+            width: 100px;
+            margin: 5px auto;
+           
+
+            @include sm-up{
+                margin: 10px 0;
+            }
+        }
+        .logos_desktop{
+            display:none;
+
+            @include xl-up{
+                display:flex;
+            }
+        }
+
+        .logos_mobile{
+            display:flex;
+
+            @include xl-up{
+                display:none;
+            }
+        }
+
+        .mobile_form_wrapper{
+            background-color:$blue;
+            width: 100vw;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            overflow: hidden;
+            padding: 50px;
+            margin-bottom: 50px;
+
+        }
+
+        form{
+
+            @include xl-up{
+                padding-left: 50px;
+            }
+       
+        }
+        .form-row{
+           
+            
+            @include md-up{
+                justify-content: flex-end;
+            }
+
+
+            .form-group {
+               width: 100%;
+               margin:20px 0;
+
+               label{
+                   color:$orange;
+                   margin-bottom:20px;
+                   
+                   @include xxl-up{
+                       font-size:18px;
+                   }
+               }
+
+                
+                    .form-control {
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #8080B6;
+                        padding: 0 0 20px 0;
+                        height: 40px;
+                        color: $white;
+                        font-size: 16px;
+
+                        &:focus{
+                            box-shadow: none !important;
+                        }
+                  
+
+
+                    &::-webkit-input-placeholder { /* Edge */
+                        color: #8080B6 !important;
+                        text-transform: none;
+                      } 
+                      
+                      &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                        color: #8080B6 !important;
+                        text-transform: none;
+                      }
+                      
+                      &::placeholder {
+                        color: #8080B6 !important;
+                        text-transform: none;
+                      }
+                    }
+
+                    textarea{
+                        overflow: hidden;
+                        height: 60px !important;
+
+                        @include xl-up{
+                            height: 40px !important;
+                        }
+                    }
+            }
+                .controls{
+                    padding: 15px 0 0 0;
+                    position: relative;
+                    cursor: pointer;
+                    height: 60px;
+
+                    .btn_sign_up{
+                        background: transparent;
+                        text-transform: capitalize;
+                        font-size: 14px;
+                        padding:0;
+                        text-decoration: none;
+                        background-color:$orange;
+                        padding:10px 25px;
+                        color:$white;
+                        width: 100%;   
+
+                        &:focus{
+                            outline: none !important;
+                        }
+
+                        @include xxl-up{
+                            font-size:16px;
+                        }
+
+                        &:hover{
+                            background-color:$red;
+                            color:$white;
+                        }
+                        
+                    }
+                }
+            
+        }
+
+        .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output{
+            color:#fff
+        }
+    }
+}
+}
+
+// Contact Us page CSS ends here 
