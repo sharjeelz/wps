@@ -1,5 +1,8 @@
 vendor
 wp
 .env
+wp-content/plugins/*
+!wp-content/plugins/classic-editor/
 wp-content/themes/*
 !wp-content/themes/virtualforce
+

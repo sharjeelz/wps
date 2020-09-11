@@ -336,7 +336,7 @@ class Classic_Editor {
 			'sanitize_callback' => array( __CLASS__, 'validate_option_allow_users' ),
 		) );
 
-		add_option_whitelist( array(
+		add_allowed_options( array(
 			'writing' => array( 'classic-editor-replace', 'classic-editor-allow-users' ),
 		) );
 

@@ -9,9 +9,9 @@
       "package": {
         "type": "webroot",
         "name": "wordpress/wordpress",
-        "version": "5.4",
+        "version": "5.5.1",
         "dist": {
-          "url": "https://github.com/WordPress/WordPress/archive/5.4.zip",
+          "url": "https://github.com/WordPress/WordPress/archive/5.5.1.zip",
           "type": "zip"
         },
         "require": {
@@ -21,7 +21,7 @@
     }
   ],
   "require": {
-    "wordpress/wordpress": "5.4",
+    "wordpress/wordpress": "5.5.1",
     "sensiolabs/security-checker": "^6.0",
     "vlucas/phpdotenv": "^5.1"
   },

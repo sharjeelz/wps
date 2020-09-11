@@ -81,7 +81,7 @@ define('FS_METHOD', 'direct');
 define('FS_CHMOD_DIR', (0755 & ~umask()));
 define('FS_CHMOD_FILE', (0644 & ~umask()));
 define('WP_CONTENT_DIR', dirname(__FILE__) . '/wp-content');
-define('WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/wp-content');
+define('WP_CONTENT_URL', $_ENV['WP_CONTENT_URL']);
 
 /**#@-*/
 
